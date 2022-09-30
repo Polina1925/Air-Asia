@@ -24,8 +24,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+p {
+  margin-top: 0;
+}
+
 *{
   box-sizing: border-box;
+}
+
+.main__page-wrapper {
+  background: url("./img/home.png") center top no-repeat, url("./img/lower.png") right bottom 165px no-repeat;
 }
 
 .container {
@@ -96,9 +104,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
+.contacts__desc {
+  color: #9A9A9A;
+  font-size: 11px;
+  top: 30px;
+  right: 0;
+  font-style: normal;
+  text-align: right;
+
+}
+
 .hero__text-section {
   width: 520px;
-  padding-bottom: 250px;
+  padding-bottom: 262px;
 }
 
 .hero__title {
@@ -123,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tours {
-  margin-bottom: 127px;
+  margin-bottom: 118px;
 }
 
 .iconed__title {
@@ -177,24 +195,24 @@ h1, h2, h3, h4, h5, h6 {
   color:#000000;
   font-weight: bold;
   font-size: 24px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .tours__offer {
-    display: inline-block;
-
-  margin-bottom: 24px;
+  display: inline-block;
+  margin-bottom: 29px;
+  width: 100%;
 }
 
 .tours__icon {
   display: inline-block;
   vertical-align: middle;
-  width: 116px;
-  margin-right: 28px;
+  width: 49%;
 }
 
 .tours__item-pic {
-  position: absolute;
+  margin-right: 15px;
+  float: left;
 }
 
 .tours__icon:last-child {
@@ -218,6 +236,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #F5170E;
 }
 
+.tours__btn {
+  display: inline-block;
+  width: 135px;
+  height: 55px;
+  padding: 18px 30px;
+}
+
+.news__list {
+  margin-bottom: 53px;
+}
+
+.news__title {
+  margin-bottom: 51px;
+}
+
 .news__item {
   width: 557px;
   display: inline-block;
@@ -225,6 +258,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.news__item:last-child {
+  margin-left: 22px;
 }
 
 .news__item-img {
@@ -236,5 +273,174 @@ h1, h2, h3, h4, h5, h6 {
 
 .news__text-content {
   position: absolute;
-  
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px 29px;
+  min-height: 166px;
+}
+
+.news__date {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.news__item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4.5px;
+}
+
+.news__item-description {
+  font-size: 16px;
+}
+
+.paginator {
+  text-align: center;
+  margin-bottom: 146px;
+}
+
+.paginator__display,.paginator__list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.paginator__display {
+  margin-right: 23px;
+}
+
+.paginator__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.paginator__item-activ .paginator__link {
+  background: #FFFFFF;
+  color: #F5170E;
+}
+
+.paginator__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.about {
+  margin-bottom: 53px;
+}
+
+.about::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 490px;
+  height: 505px;
+  background: url("/img/gates.png") center center / cover no-repeat;
+}
+
+.about__desc {
+  background: url("/img/mountains.png") center center / cover no-repeat;
+  padding: 70px 81px;
+  display: inline-block;
+  vertical-align: top;
+  width: 785px;
+  height: 455px;
+  margin-left: -143px;
+  margin-top: 95px;
+}
+
+.about__title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 37px;
+}
+
+.about__desc-text {
+  color: #000000;
+  margin-bottom: 43px;
+  margin-right: 202px;
+  line-height: 27px;
+}
+
+.about__desc-text p {
+  margin-bottom: 20px;
+}
+
+.about__desc-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about__btn {
+  display: inline-block;
+}
+
+.footer__container-content {
+  border-top: 1px solid #192F37;
+}
+
+.footer {
+  height: 130px;
+  position: relative;
+  margin-top: 16px;
+}
+
+.social__list {
+  top: 34px;
+  right: 245px;
+  position: absolute;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.sociak__item:last-child {
+  margin-right: 0;
+}
+
+.social__link{
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.social__item-tg .social__link {
+  background-image: url(./img/social-icon/telegram.png);
+}
+
+.social__item-tg .social__link:hover {
+  background-image: url(./img/social-icon/t.hover.png);
+}
+
+.social__item-vk .social__link {
+  background-image: url(./img/social-icon/vk.png);
+}
+
+.social__item-vk .social__link:hover {
+  background-image: url(./img/social-icon/vk.hover.png);
+}
+
+.social__item-fb .social__link {
+  background-image: url(./img/social-icon/f.png);
+}
+
+.social__item-fb .social__link:hover {
+  background-image: url(./img/social-icon/f2.hover.png);
+}
+
+.social__item-ig .social__link {
+  background-image: url(./img/social-icon/in.png);
+}
+
+.social__item-ig .social__link:hover {
+  background-image: url(./img/social-icon/in.hover.png);
 }
