@@ -3,6 +3,7 @@ body {
   color: #FFFFFF;
   font-size: 14px;
   line-height: 1.42;
+  background: #001821;
   margin: 0;
 }
 
@@ -36,9 +37,14 @@ body, html {
   height: 100%;
 }
 
-.index {
-  background: #001821;
+img {
+  display: block;
+  max-width: 100%;
 }
+
+/* .index {
+  background: #001821;
+} */
 
 .wrapper {
   display: flex;
@@ -521,4 +527,51 @@ body, html {
 .breadcrumbs__link {
   color: #98A4A8;
   font-size: 14px;
+}
+
+.page-content {
+  background: white;
+  color: #303030;
+  padding: 95px 0;
+}
+
+.service {
+  display: flex;
+}
+
+.services__item-elem {
+  margin-bottom: 50px;
+}
+
+.service__img {
+  width: 41%;
+  margin-right: 4%;
+}
+
+.service__content {
+  flex: 1;
+  margin-top: 10px;
+}
+
+.service_title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: #000000;
+}
+
+.service__desc {
+  line-height: 27px;
+  font-size: 16px;
+  margin-bottom: 54px;
+}
+
+.button-color {
+  color: #FFFFFF;
+}
+
+.service__button:hover {
+  background: #FFFFFF;
+  border: 1px solid #F5170E;
+  color: #F5170E;
 }
