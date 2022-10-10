@@ -1,0 +1,216 @@
+.main__page-wrapper {
+  background: url("./img/home.png") center top no-repeat, url("./img/lower.png") right bottom 165px no-repeat;
+}
+
+.hero__text-section {
+  width: 520px;
+  padding-bottom: 262px;
+}
+
+.hero__title {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  margin-bottom: 49px;
+}
+
+.tours {
+  padding-bottom: 118px;
+  display: flex;
+}
+
+.iconed__title {
+  margin-bottom: 51px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.tours__item-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.tours__list {
+  display: flex;
+  gap: 27px;
+}
+
+.tours__item {
+  background: #FFFFFF;
+  border-radius: 4px;
+
+}
+
+.tours__item:last-child {
+  margin-right: 0;
+}
+
+.tours__content {
+  display: flex;
+  flex-direction: column;
+  padding: 29px 22px;
+}
+
+.tours__title {
+  color:#000000;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+
+.tours__offer {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.tours__icon {
+  display: flex;
+  margin-right: 28px;
+}
+
+.tours__item-pic {
+  margin-right: 12px;
+}
+
+.tours__icon:last-child {
+  margin-right: 0;
+}
+
+.tours__item-text {
+  color: #666666;
+  font-size: 16px;
+}
+
+.tours__item-description {
+  color: #303030;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.tours__btn {
+  width: 135px;
+  height: 55px;
+  padding: 18px 30px;
+  border: 1px solid;
+}
+
+.tours__btn:hover {
+  background: #FFFFFF;
+  border: 1px solid #F5170E;
+  color: #F5170E;
+}
+
+.news__list {
+  margin-bottom: 53px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__title {
+  margin-bottom: 51px;
+}
+
+.news__item {
+  width: 557px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.news__item:last-child {
+  margin-left: 22px;
+}
+
+.news__item-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news__text-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px 29px;
+  min-height: 166px;
+}
+
+.news__date {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.news__item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4.5px;
+}
+
+.news__item-description {
+  font-size: 16px;
+}
+
+.about {
+  padding-bottom: 53px;
+  display: flex;
+}
+
+.about::before {
+  content: "";
+  width: 490px;
+  display: block;
+  height: 505px;
+  background: url("./img/gates.png") center center / cover no-repeat;
+}
+
+.about__desc {
+  background: url("./img/mountains.png") center center / cover no-repeat;
+  padding: 70px 81px;
+  max-width: 785px;
+  height: 455px;
+  margin-left: -143px;
+  margin-top: 95px;
+}
+
+.about__title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 37px;
+}
+
+.about__desc-text {
+  color: #000000;
+  margin-bottom: 43px;
+  margin-right: 202px;
+  line-height: 27px;
+}
+
+.about__desc-text p {
+  margin-bottom: 20px;
+}
+
+.about__desc-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about__btn {
+  display: inline-block;
+}
