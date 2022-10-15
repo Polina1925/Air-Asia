@@ -1,0 +1,66 @@
+.greeting-wrapper {
+  background: url(../img/greeting/greeting.png) center top no-repeat;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: zoom .9s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(.7);
+  }
+
+  20% {
+    transform: scale(1.15);
+  }
+
+  40% {
+    transform: scale(.9);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  80% {
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.greeting__content {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/greeting/shades.png) center top no-repeat;
+  align-items: center;
+  padding: 45px 156px;
+}
+
+.greeting__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.greeting__button {
+  text-align: center;
+  width: 168px;
+  height: 55px;
+}
+
+.greeting__button:hover {
+  background: #DA0100;
+}

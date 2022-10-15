@@ -1,0 +1,133 @@
+.reviews {
+  column-count: 2;
+  column-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.reviews__item{
+  margin-bottom: 30px;
+}
+
+.review {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 50px 30px 29px;
+  background: #F4F5F5;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  margin-right: 23px;
+}
+
+.review__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.review__user {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2E77A4;
+  margin-bottom: 11px;
+}
+
+.review__user:after {
+  content: url(../img/comment/vk-blue.png);
+  height: 29px;
+  margin-left: 9px;
+}
+
+.review__tags {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tag {
+  font-size: 13px;
+  color: #303030;
+  padding: 8px 16px;
+  border-radius: 35px;
+  background: #E7E7E7;
+}
+
+.tag--bg--green {
+  background: #B9EAE4;
+}
+
+.review__title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #1A1B1E;
+  margin-bottom: 13px;
+}
+
+.review__content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #818181;
+  margin-bottom: 49px;
+}
+
+.review__date {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1A1B1E;
+}
+
+.paginator__reviews {
+  margin-bottom: 90px;
+}
+
+.separator {
+  background: url(../img/comment/bg-com.png)center top no-repeat ;
+  padding-top: 20px;
+}
+
+.separator__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.separator__title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  width: 50%;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  flex: 1;
+  margin-right: 30px;
+  border-radius: 4px;
+  border: none;
+  background: #FFFFFF;
+  padding: 22px 30px;
+  font-size: 18px;
+  color: #1A1B1E;
+}
+
+.form__input::placeholder {
+  color: #666666;
+}
+
+.form__input:last-child {
+  margin-right: 30px;
+}
+
+.form__input--textarea {
+  height: 232px;
+}
