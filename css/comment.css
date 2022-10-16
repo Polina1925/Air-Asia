@@ -104,9 +104,18 @@
   width: 50%;
 }
 
+.inner-section__comment {
+  padding-top: 63px;
+  padding-bottom: 100px;
+}
+
+.inner-section__comment__title {
+  margin-bottom: 56px;
+}
+
 .form__row {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .form__input {
@@ -125,9 +134,66 @@
 }
 
 .form__input:last-child {
-  margin-right: 30px;
+  margin-right: 0px;
 }
 
 .form__input--textarea {
   height: 232px;
+  resize: none;
+}
+
+.form__controls {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.form__controls-title {
+  width: 38%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 10px;
+}
+
+.controls {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.controls__item {
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.controls__elem {
+  cursor: pointer;
+}
+
+.controls__checkbox:checked ~ .controls__tag {
+  background: #B9EAE4;
+}
+
+.controls__checkbox {
+  display: none;
+}
+
+.form__btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn--color--black {
+  background: #8E8E8E;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.btn--color--black:hover {
+  background: #2B2B2B;
+}
+
+.form__button {
+  color: #FFFFFF;
 }

@@ -42,6 +42,12 @@ img {
   max-width: 100%;
 }
 
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   width: 1140px;
@@ -107,12 +113,16 @@ img {
 
 .contacts_workhours {
   font-size: 13px;
-  text-decoration: underline;
   color: #98A4A8;
+  position: relative;
 }
 
 .contacts_workhours:hover {
   color: #FFFFFF;
+}
+
+.contacts_workhours:hover .dropdown {
+  display: block;
 }
 
 .contacts__desc {
@@ -123,6 +133,53 @@ img {
   font-style: normal;
   text-align: right;
   margin-bottom: 11px;
+}
+
+.contacts_schedule {
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  display: none;
+}
+
+.triangle {
+  border: 10px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom-color: #CDD1D2;
+  opacity: 0.8;
+  margin-left: 94px;
+}
+
+.dropdown__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 156px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #CDD1D2;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.dropdown__mode {
+
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 21px;
+  color: #1E1F20;
+}
+
+.dropdown__dinner {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 21px;
+  color: #1E1F20;
 }
 
 .button {
