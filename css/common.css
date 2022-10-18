@@ -267,6 +267,7 @@ button {
 }
 
 .social__list {
+  display: flex;
   top: 34px;
   right: 245px;
   margin-right: 62px;
@@ -276,50 +277,81 @@ button {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+  position: relative;
+  cursor: pointer;
 }
 
 .sociak__item:last-child {
   margin-right: 0;
 }
 
-.social__link{
+.social__item-tg::after {
+  content: "";
   display: block;
-  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 36px;
   height: 36px;
-  background: center center no-repeat;
+  background: url(../img/social-icon/sprites.png) -10px -10px;
 }
 
-.social__item-tg .social__link {
-  background-image: url(../img/social-icon/telegram.png);
+.social__item-tg:hover::after {
+  background-position: -122px -10px ;
 }
 
-.social__item-tg .social__link:hover {
-  background-image: url(../img/social-icon/t.hover.png);
+.social__item-vk::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: url(../img/social-icon/sprites.png) -66px -10px;
 }
 
-.social__item-vk .social__link {
-  background-image: url(../img/social-icon/vk.png);
+.social__item-vk:hover::after {
+  background-position: -122px -66px ;
 }
 
-.social__item-vk .social__link:hover {
-  background-image: url(../img/social-icon/vk.hover.png);
+.social__item-fb::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: url(../img/social-icon/sprites.png)  -10px -66px;
 }
 
-.social__item-fb .social__link {
-  background-image: url(../img/social-icon/f.png);
+.social__item-fb:hover::after {
+  background-position: -10px -122px ;
 }
 
-.social__item-fb .social__link:hover {
-  background-image: url(../img/social-icon/f2.hover.png);
+.social__item-ig::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: url(../img/social-icon/sprites.png) -66px -66px;
 }
 
-.social__item-ig .social__link {
-  background-image: url(../img/social-icon/in.png);
-}
-
-.social__item-ig .social__link:hover {
-  background-image: url(../img/social-icon/in.hover.png);
+.social__item-ig:hover::after {
+  background-position: -66px -122px;
 }
 
 .footer__phone {

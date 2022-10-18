@@ -192,6 +192,7 @@
 
 .btn--color--black:hover {
   background: #2B2B2B;
+  transition: 1s;
 }
 
 .form__button {
